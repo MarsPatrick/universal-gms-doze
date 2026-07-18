@@ -14,7 +14,7 @@
 >
 > **KernelSU legacy (22091 and below):** Works out of the box, no metamodule required.
 >
-> **OnePlus OxygenOS 16 users:** it appears that com.google.android.gms cannot be modified because the system won't allow it; investigation in progress (If this module won't work, try [Frosty](https://github.com/xizt159/Frosty))
+> **OnePlus OxygenOS 16 users:** it appears that com.google.android.gms cannot be modified because the system won't allow it; ~~investigation in progress~~ (If this module won't work, try [Frosty](https://github.com/xizt159/Frosty))
 ## WebUI
 The module includes a built-in WebUI accessible from the KernelSU module page.
 
