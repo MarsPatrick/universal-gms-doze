@@ -23,6 +23,7 @@ Features:
 - Fix delayed notifications (clears GMS cache)
 - Find My Device toggle (enable/disable)
 - Force re-apply optimization
+- Debug tab for the debug zip, only if your device won't work ([Bug-Report](https://github.com/MarsPatrick/universal-gms-doze/wiki/Bug-report)).
 
 ## Download Links
 - [GitHub Releases](https://github.com/MarsPatrick/universal-gms-doze/releases)
