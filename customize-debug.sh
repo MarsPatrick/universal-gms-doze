@@ -159,6 +159,24 @@ _fixup_partition_layout() {
             fi
         fi
     done
+    if [ -d "/data/adb/modules/mountify" ] || [ -d "/data/adb/mountify" ] || \
+       grep -q "/mnt/vendor/mountify" /proc/mounts 2>/dev/null; then
+        dbg_raw "  mountify detected -- mirroring overlays to \$MODPATH/system/"
+        log_doze "[OK] mountify detected -- mirroring overlays to \$MODPATH/system/"
+        for _p in $_PARTITIONS; do
+            p="${_p#/}"
+            if [ -d "$_MODDIR/$p" ] && [ ! -L "$_MODDIR/$p" ] && \
+               [ ! -e "$_MODDIR/system/$p" ]; then
+                mkdir -p "$_MODDIR/system/$p"
+                if cp -af "$_MODDIR/$p/." "$_MODDIR/system/$p/" 2>/dev/null; then
+                    log_doze "[OK] mirrored \$MODPATH/$p -> \$MODPATH/system/$p"
+                    dbg_raw "  mirrored $p -> system/$p"
+                else
+                    log_doze "[WARN] mirror failed for /$p"
+                fi
+            fi
+        done
+    fi
     dbg_raw "--- _fixup_partition_layout end ---"
     dbg_raw "--- MODPATH layout after fixup ---"
     find "$_MODDIR" -maxdepth 5 -not -path '*/system/bin/*' 2>/dev/null >> "$DEBUG_LOG"

@@ -60,13 +60,14 @@ If the issue still persists, move the app to Not Optimized battery usage.
 
 ## Tested Devices
 
-| Device | Codename | ROM | Android | Kernel | KernelSU |
-|--------|----------|-----|---------|--------|----------|
-| Pixel 7 Pro | cheetah | crDroid 11.6 | 15 | blu_spark 256 | KernelSU 3.1.0 GKI |
-| Pixel 7 Pro | cheetah | crDroid 12.9 | 16 | blu_spark 263 | KernelSU 3.2.4 GKI |
-| Pixel 7 Pro | cheetah | Pixel Stock | 14 | Pixel Stock | KernelSU-Next 3.3.0 GKI |
-| Pixel 7 Pro | cheetah | Pixel Stock | 17 | - | - |
-| Xiaomi Mi 10 | umi | PixelOS 16.2 | 16 | N0Kernel v16.4.9 v2 | KernelSU Next 1.1.1 hotfix |
+| Device | Codename | ROM | Android | Kernel | Root Method | Meta-Module |
+|--------|----------|-----|---------|--------|-------------|-------------|
+| Pixel 7 Pro | cheetah | crDroid 11.6 | 15 | blu_spark 256 | KernelSU 3.1.0 GKI | Meta-OverlayFS |
+| Pixel 7 Pro | cheetah | crDroid 12.9 | 16 | blu_spark 263 | KernelSU 3.2.4 GKI | Meta-OverlayFS |
+| Pixel 7 Pro | cheetah | Pixel Stock | 14 | Pixel Stock | KernelSU-Next 3.3.0 GKI | Meta-OverlayFS |
+| Pixel 7 Pro | cheetah | Pixel Stock | 17 | - | - | Meta-OverlayFS |
+| Xiaomi Mi 10 | umi | PixelOS 16.2 | 16 | N0Kernel v16.4.9 v2 | KernelSU Next 1.1.1 hotfix | Meta-OverlayFS |
+| Redmi Note 5 | whyred | AxionOS 2.8 | 16 | Built-in | KernelSU-Next 3.2.0 GKI | Mountify |
 
 ## Credits
 - [gloeyisk](https://github.com/gloeyisk/universal-gms-doze) / Original author

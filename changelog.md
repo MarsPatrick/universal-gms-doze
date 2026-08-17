@@ -1,4 +1,7 @@
 ## Change Log:
+- 1.9.11
+Fix for mountify
+
 - 1.9.10    
 Now patch the real xml (pattern bug patch all)
 Fixed symlink inside symlink folder
