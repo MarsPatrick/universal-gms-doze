@@ -4,6 +4,8 @@
 > The original project appears to be unmaintained. This fork only attempts to adapt compatibility
 > for newer Android versions (15+) and KernelSU. No new features are intended.
 
+## For bugs, please use debug zip and share debug log, i can't fix non working states because in my tested devices work
+
 ## Overview
 - Patches Google Play services app and certain processes/services to be able to use battery optimization
 - Support API 23 or later
@@ -62,6 +64,8 @@ If the issue still persists, move the app to Not Optimized battery usage.
 |--------|----------|-----|---------|--------|----------|
 | Pixel 7 Pro | cheetah | crDroid 11.6 | 15 | blu_spark 256 | KernelSU 3.1.0 GKI |
 | Pixel 7 Pro | cheetah | crDroid 12.9 | 16 | blu_spark 263 | KernelSU 3.2.4 GKI |
+| Pixel 7 Pro | cheetah | Pixel Stock | 14 | Pixel Stock | KernelSU-Next 3.3.0 GKI |
+| Pixel 7 Pro | cheetah | Pixel Stock | 17 | - | - |
 | Xiaomi Mi 10 | umi | PixelOS 16.2 | 16 | N0Kernel v16.4.9 v2 | KernelSU Next 1.1.1 hotfix |
 
 ## Credits
